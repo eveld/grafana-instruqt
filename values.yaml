@@ -295,8 +295,10 @@ dashboards:
   #     gnetId: 2
   #     revision: 2
   #     datasource: Prometheus
-    local-dashboard:
+    kubernetes-metrics:
       url: https://raw.githubusercontent.com/eveld/grafana-instruqt/master/dashboards/k8s.json
+    ingress:
+      url: https://raw.githubusercontent.com/eveld/grafana-instruqt/master/dashboards/ingress.json
   #   local-dashboard-base64:
   #     url: https://example.com/repository/test-b64.json
   #     b64content: true
