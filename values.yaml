@@ -276,7 +276,7 @@ dashboardProviders:
      disableDeletion: false
      editable: true
      options:
-       path: /var/lib/grafana/dashboards
+       path: /var/lib/grafana/dashboards/default
 
 ## Configure grafana dashboard to import
 ## NOTE: To use dashboards you must also enable/configure dashboardProviders
