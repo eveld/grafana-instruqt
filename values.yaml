@@ -275,7 +275,7 @@ notifiers: {}
 ## `path` must be /var/lib/grafana/dashboards/<provider_name>
 ##
 dashboardProviders:
-  dashboardproviders.yaml: |
+  dashboardproviders.yaml:
     apiVersion: 1
     providers:
     - disableDeletion: false
