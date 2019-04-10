@@ -233,15 +233,12 @@ plugins: []
 ## ref: http://docs.grafana.org/administration/provisioning/#datasources
 ##
 datasources:
-  datasources.yaml: |
-    apiVersion: 1
-    datasources:
-    - access: proxy
-      isDefault: true
-      name: prometheus
-      type: prometheus
-      url: http://prometheus-server
-      version: 1
+  - access: proxy
+    isDefault: true
+    name: prometheus
+    type: prometheus
+    url: http://prometheus-server
+    version: 1
 #  datasources.yaml:
 #    apiVersion: 1
 #    datasources:
