@@ -233,12 +233,12 @@ plugins: []
 ## ref: http://docs.grafana.org/administration/provisioning/#datasources
 ##
 datasources:
-  - access: proxy
-    isDefault: true
-    name: prometheus
-    type: prometheus
-    url: http://prometheus-server
-    version: 1
+- access: proxy
+  isDefault: true
+  name: prometheus
+  type: prometheus
+  url: http://prometheus-server
+  version: 1
 #  datasources.yaml:
 #    apiVersion: 1
 #    datasources:
@@ -271,7 +271,15 @@ notifiers: {}
 ##
 ## `path` must be /var/lib/grafana/dashboards/<provider_name>
 ##
-dashboardProviders: {}
+dashboardProviders:
+- name: 'default'
+  orgId: 1
+  folder: ''
+  type: file
+  disableDeletion: false
+  updateIntervalSeconds: 10 #how often Grafana will scan for changed dashboards
+  options:
+    path: /var/lib/grafana/dashboards
 #  dashboardproviders.yaml:
 #    apiVersion: 1
 #    providers:
